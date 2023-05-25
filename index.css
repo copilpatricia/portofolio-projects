@@ -9,11 +9,11 @@ body {
 
 :root {
   /* font-size */
-  --font-size-xxs: 15px;
-  --font-size-xs: 20px;
-  --font-size-small: 35px;
-  --font-size-medium: 40px;
-  --font-size-large: 70px;
+  --font-size-xxs: 1rem;
+  --font-size-xs: 1.25rem;
+  --font-size-small: 2.1875rem;
+  --font-size-medium: 2.5rem;
+  --font-size-large: 4.375rem;
 
   /* font-colors */
 
@@ -38,7 +38,7 @@ header {
 
 #list-menu {
   list-style: none;
-  margin: 0 70px 0 0;
+  margin: 0 4.375em 0 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -52,10 +52,10 @@ a {
 }
 
 .details {
-  width: 100%;
+  max-width: 100%;
   height: 500px;
-  padding: 30px;
-  margin: 150px;
+  padding: 1.875em;
+  margin: 9.375em;
 }
 
 #user-name {
@@ -74,7 +74,7 @@ a {
   background-color: var(--blue);
   font-size: var(--font-size-xs);
   color: var(--white-1);
-  padding: 20px 50px;
+  padding: 1em 2.5em;
   cursor: pointer;
 }
 
@@ -98,12 +98,11 @@ main {
   font-size: var(--font-size-large);
   color: var(--white-1);
   letter-spacing: 10px;
-  padding: 50px;
-  margin-left: 150px;
+  padding: 0.7412em;
+  margin-left: 2.1428em;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0.28571em;
 }
-
 
 .work-space-one,
 .work-space-two {
@@ -112,7 +111,7 @@ main {
 }
 
 .space {
-  margin-bottom: 50px;
+  margin-bottom: 3.125em;
 }
 
 #project-title {
@@ -120,7 +119,7 @@ main {
   color: var(--white);
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.25em;
 }
 
 #project-description {
@@ -131,14 +130,14 @@ main {
 }
 
 #project-list {
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 
 li {
   font-size: var(--font-size-xs);
   color: var(--white-1);
   font-weight: 300;
-  margin-top: 10px;
+  margin-top: 0.5em;
 }
 
 #project-link {
@@ -165,8 +164,8 @@ section {
 .description-section {
   width: 750px;
   height: 300px;
-  padding: 40px;
-  margin-left: 150px;
+  padding: 2.5em;
+  margin-left: 9.375em;
   margin-top: 0;
 }
 
@@ -178,7 +177,7 @@ section {
 }
 
 ul {
-  padding: 0 16px;
+  padding: 0 1em;
 }
 
 #list-certification {
@@ -190,7 +189,7 @@ footer {
   background-color: var(--background-black);
   width: 100%;
   height: 100px;
-  padding-top: 100px;
+  padding-top: 6.25em;
 }
 
 #logo-contact {
@@ -199,18 +198,16 @@ footer {
   gap: 20px;
 }
 
-#arrow-up{
+#arrow-up {
   display: none;
   position: fixed;
-  bottom: 16px;
+  bottom: 46px;
   right: 16px;
-  padding: 20px 25px;
+  padding: 1.25em 1.562em;
   border: none;
   border-radius: 50%;
   background-color: #e63946;
-
 }
-
 
 @media (max-width: 874px) {
   html,
@@ -249,84 +246,85 @@ footer {
   }
 
   #btn-interaction {
-    padding: 10px 25px;
+    padding: 0.625em 1.562em;
     font-size: var(--font-size-xxs);
   }
 
   #main-title,
-  #title-section{
+  #title-section {
     font-size: var(--font-size-small);
     width: 300px;
     height: 50px;
     margin: 0 auto;
-    padding: 30px 55px;
+    padding: 0.857em 1.571em;
     text-align: center;
   }
 
-  .work-space{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+  .work-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .work-space-one, .work-space-two{
+  .work-space-one,
+  .work-space-two {
     width: 380px;
     height: 280px;
     margin: 0 auto;
     text-align: center;
   }
 
-  .work-space-one{
-    margin-top: 20px;
+  .work-space-one {
+    margin-top: 1.25em;
   }
 
   .space {
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
   }
 
-  #project-title{
+  #project-title {
     font-size: var(--font-size-xs);
   }
 
-  #project-description{
+  #project-description {
     font-size: var(--font-size-xs);
   }
 
-  #project-list{
+  #project-list {
     list-style: none;
   }
 
-  #project-link{
+  #project-link {
     font-size: var(--font-size-xs);
   }
 
-  #project-img{
+  #project-img {
     width: 380px;
     height: 300px;
   }
 
-  section{
+  section {
     height: 400px;
   }
 
-  .description-section{
+  .description-section {
     width: 400px;
     height: 230px;
     margin: 0 auto;
     text-align: center;
   }
 
-  #description{
+  #description {
     font-size: var(--font-size-xxs);
     margin-top: 0px;
   }
 
-  #list-certification{
+  #list-certification {
     font-size: 12px;
   }
 
-  footer{
+  footer {
     height: 50px;
   }
 }
